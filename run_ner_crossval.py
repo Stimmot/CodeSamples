@@ -7,11 +7,11 @@ import json
 import random
 
 def main(json_config):
-    working_dir = "/home/IAIS/tschmude/bert_remote/examples/token-classification/Data_processing_scripts/CrossVal_Files/Rotation/Train_file_swap"
-    train_set_directory = "/home/IAIS/tschmude/bert_remote/examples/token-classification/Data_processing_scripts/CrossVal_Files/Rotation/Train"
-    test_set_directory = "/home/IAIS/tschmude/bert_remote/examples/token-classification/Data_processing_scripts/CrossVal_Files/Rotation/Test"
-    test_swap_directory = "/home/IAIS/tschmude/bert_remote/examples/token-classification/Data_processing_scripts/CrossVal_Files/Rotation/Test_file_swap"
-    test_pred_directory = "/home/IAIS/tschmude/bert_remote/examples/token-classification/Data_processing_scripts/CrossVal_Files/Rotation/Test_predictions"
+    working_dir = "CrossVal_Files/Rotation/Train_file_swap"
+    train_set_directory = "CrossVal_Files/Rotation/Train"
+    test_set_directory = "CrossVal_Files/Rotation/Test"
+    test_swap_directory = "CrossVal_Files/Rotation/Test_file_swap"
+    test_pred_directory = "CrossVal_Files/Rotation/Test_predictions"
     train_files = os.listdir(train_set_directory)
     test_files = os.listdir(test_set_directory)
     only_predict = False
